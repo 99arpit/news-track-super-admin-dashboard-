@@ -106,9 +106,9 @@ const Navbar = () => {
             AD MANAGEMENT
           </p>
           <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a className="dropdown-item" href="#">
+          <Link to={"/create-ad"} className="dropdown-item">
               CREATE AN AD
-            </a>
+            </Link>
             <a className="dropdown-item" href="#">
               AD LIST
             </a>
@@ -123,6 +123,52 @@ const Navbar = () => {
             </a>
           </div>
         </div>
+
+
+
+        {/* <div className="dropdown dropdowns">
+          <p
+            className=" dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            AD MANAGEMENT
+          </p>
+          <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <Link to={"/create-ad"} className="dropdown-item">
+              CREATE AN AD
+            </Link>
+            <a className="dropdown-item" href="#">
+              AD LIST
+            </a>
+            <a className="dropdown-item" href="#">
+              AD SETTING
+            </a>
+            <a className="dropdown-item" href="#">
+              AD MANAGEMENT
+            </a>
+            <a className="dropdown-item" href="#">
+              AD SETTING TOPICS
+            </a>
+          </div>
+        </div> */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         {/* AD MANAGEMENT DROPDOWN END  */}
 

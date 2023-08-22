@@ -22,7 +22,8 @@ import  Categorys from "./COMPONENTS/Categorys";
 import Tags from "./COMPONENTS/Tags";
 import  Location  from "./COMPONENTS/Location";
 import RoleBasedUserList from "./COMPONENTS/RoleBasedUserList";
-import VendorRegistrationList from "./COMPONENTS/VendorRegistrationList"
+import VendorRegistrationList from "./COMPONENTS/VendorRegistrationList";
+import CreateAd from "./COMPONENTS/CreateAd";
 const App = () => {
   return (
     <BrowserRouter>
@@ -47,6 +48,8 @@ const App = () => {
         <Route path="/Template3" element={<Template3 />} />
         <Route path="/RoleManagement" element={<RoleManagement />} />
         <Route path="/EpaperPreview" element={<EpaperPreview />} />
+        <Route path="/create-ad" element={<CreateAd />} />
+
         <Route
           path="/NewsAgencyNewsApproval"
           element={<NewsAgencyNewsApproval />}

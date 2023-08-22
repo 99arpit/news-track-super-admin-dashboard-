@@ -45,8 +45,7 @@ const Personalinfromation = () => {
       );
       alert(response.statusText);
       // navigate("/dashboard");
-      // setEmail("");
-      // setPassword("");
+      setValues("")
     } catch (error) {
       alert(error.request.responseText);
     }

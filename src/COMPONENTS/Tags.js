@@ -24,7 +24,6 @@ const Personalinfromation = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-
     setValues({
       ...values,
       [name]: value,
@@ -33,13 +32,14 @@ const Personalinfromation = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
       const response = await axios.post(
         "http://174.138.101.222:8080/mastertag",
         values
       );
       alert(response.statusText);
+      setValues((values)=>values.tag_name='')
+      
       // navigate("/dashboard");
       // setEmail("");
       // setPassword("");
